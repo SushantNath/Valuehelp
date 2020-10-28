@@ -1,0 +1,110 @@
+<mvc:View controllerName="com.sap.valuehelpFilter.valuehelpFilter.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<MultiInput id="multiInput" valueHelpRequest=".onValueHelpRequested"></MultiInput>
+						<MultiInput id="multiInput2" valueHelpRequest=".onValueHelpRequested2"></MultiInput>
+									<Table id="idProductsTable"  mode="MultiSelect"
+				 items="{
+			path : 'revenueModel>/HTvfkSet'}"
+		 selectionChange="onSelectionChange" itemPress="handleOperationSelect"  modelContextChange="onModelContextChange"
+		>
+	
+		<headerToolbar>
+			<Toolbar>
+			
+					<Title   text="{i18n>documents}"/>
+					<ToolbarSpacer/>
+					<Label text="{i18n>podDate}"/>
+					<DatePicker width = "50%" 
+			id="podDateId"
+			placeholder="Enter POD Date ..."
+			change="handlePodChange"
+		>
+				</DatePicker>
+			<Button
+								text="{i18n>extractDocuments}"
+								type="Accept" press="onClickGetDocs"/>
+								
+									<Button
+								
+								icon="sap-icon://message-popup" press="onClickInformation"/>
+			</Toolbar>
+		</headerToolbar>
+	
+		<columns>
+			<Column
+				>
+				<Text text="{i18n>Fkart}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Fkart}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Fkart}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Fkart}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Vtext}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Vtext}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Vtext}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Vtext}" />
+			</Column>
+			<Column
+				>
+				<Text text="{i18n>Vtext}" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+						title="{}"
+						text="{revenueModel>Salesorg}"/>
+					<Text
+						text="{revenueModel>DeliveryNo}" />
+					<Text
+						text="{revenueModel>Externaldelno}" />
+					<Text
+						text="{revenueModel>Soldtoparty}" />
+					<Text
+						text="{revenueModel>Shiptoparty}" />
+							<Text
+						text="{revenueModel>Imminvoiceno}" />
+							<Text
+						text="{revenueModel>Imminvreversalno}" />
+							<Text
+						text="{revenueModel>Revenueinvoice}" />
+<Text
+						text= "{=${revenueModel>Poddelstat}=== 'A' ? 'Not yet processed'  :  ${revenueModel>Poddelstat}=== 'B' ? 'Partially processed' : 'Completely processed' }" />
+						
+					
+						
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

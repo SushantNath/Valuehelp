@@ -1,0 +1,50 @@
+{
+	"cols": [
+		{
+			"label": "Delivery#",
+			"template": "Vbeln",
+			"width": "5rem"
+		},
+		{
+			"label": "Shipping Point",
+			"template": "Vstel",
+			"width": "10rem"
+		},
+			{
+			"label": "Delivery Type",
+			"template": "Lfart",
+			"width": "5rem"
+		},
+			{
+			"label": "Ship To Party",
+			"template": "Kunnr",
+			"width": "5rem"
+		},
+			{
+			"label": "Sold To Party",
+			"template": "Kunag",
+			"width": "5rem"
+		},
+			{
+			"label": "Route",
+			"template": "Route",
+			"width": "5rem"
+		},
+			{
+			"label": "Actual GI Date",
+			"template": "WadatIst",
+			"width": "5rem"
+		},
+			{
+			"label": "Billing Status",
+			"template": "Fkstk",
+			"width": "5rem"
+		},
+			{
+			"label": "POD Status",
+			"template": "Pdstk",
+			"width": "5rem"
+		}
+		
+	]
+}

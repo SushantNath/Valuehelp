@@ -1,0 +1,122 @@
+<core:FragmentDefinition
+	xmlns="sap.ui.comp.valuehelpdialog"
+	xmlns:m="sap.m"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:core="sap.ui.core">
+	<ValueHelpDialog
+		title="Product"
+		ok=".onValueHelpOkPress"
+		cancel=".onValueHelpCancelPress"
+		afterClose=".onValueHelpAfterClose"
+		supportRanges="true"
+		key="ProductId"
+		descriptionKey="Name"
+			supportMultiselect="true"
+	>
+		<filterBar>
+			<fb:FilterBar advancedMode="true" search=".onFilterBarSearch">
+				<fb:filterGroupItems>
+					<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Delivery#"
+						label="Delivery#"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Vbeln" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Shipping Point"
+						label="Shipping Point"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Vstel" />
+						</fb:control>
+					</fb:FilterGroupItem>
+
+					<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Delivery Type"
+						label="Delivery Type"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Lfart" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Ship To Party"
+						label="Ship To Party"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Kunnr" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Sold To Party"
+						label="Sold To Party"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Kunag" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Route"
+						label="Route"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Route" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Actual GI Date"
+						label="Actual GI Date"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="WadatIst" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="Billing Status"
+						label="Billing Status"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Fkstk" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					
+						<fb:FilterGroupItem
+						groupName="__$INTERNAL$"
+						name="POD Status"
+						label="POD Status"
+						visibleInFilterBar="true"
+					>
+						<fb:control>
+							<m:Input name="Pdstk" />
+						</fb:control>
+					</fb:FilterGroupItem>
+				</fb:filterGroupItems>
+			</fb:FilterBar>
+		</filterBar>
+		
+		
+	</ValueHelpDialog>
+</core:FragmentDefinition>

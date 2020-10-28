@@ -1,0 +1,16 @@
+{
+	"cols": [
+		{
+			"label": "Ship to",
+			"template": "Fkart",
+			"width": "5rem"
+		},
+		{
+			"label": "Text",
+			"template": "Vtext",
+			"width": "10rem"
+		}
+			
+		
+	]
+}
